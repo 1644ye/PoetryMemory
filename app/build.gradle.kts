@@ -1,23 +1,23 @@
 plugins { id("com.android.application") }
 android {
-    namespace = "org.quietreader"
+    namespace = "org.poetrymemory"
     compileSdk = 36
     useLibrary("android.test.runner")
     useLibrary("android.test.base")
     useLibrary("android.test.mock")
     defaultConfig {
-        applicationId = "org.quietreader"
+        applicationId = "org.poetrymemory"
         minSdk = 26
         targetSdk = 36
-        versionCode = 14
-        versionName = "1.5.0"
+        versionCode = 15
+        versionName = "1.6.0"
         testInstrumentationRunner = "android.test.InstrumentationTestRunner"
     }
     compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
     buildTypes {
         release {
             isMinifyEnabled = false
-            // Preserve upgrade compatibility with the APKs already delivered to the user.
+            // PoetryMemory has its own application identity and release lifecycle.
             // This is a non-debuggable build with the existing development signing identity.
             signingConfig = signingConfigs.getByName("debug")
         }
