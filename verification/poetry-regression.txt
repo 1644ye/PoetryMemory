@@ -1,0 +1,7 @@
+
+org.quietreader.data.PoemStoreTest:.......
+org.quietreader.PoetryFlowTest:.
+Test results for InstrumentationTestRunner=........
+Time: 2.719
+
+OK (8 tests)
